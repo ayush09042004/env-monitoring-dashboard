@@ -66,9 +66,6 @@ TWILIO_AUTH=your_twilio_auth
 TWILIO_PHONE=+1234567890
 ALERT_PHONE=+911234567890
 
-pgsql
-Copy code
-
 ### Notes
 
 - OpenAI and Twilio are optional
@@ -81,9 +78,6 @@ Copy code
 
 docker compose up --build
 
-nginx
-Copy code
-
 This starts:
 - Frontend on http://localhost:3000
 - Backend on http://localhost:5000
@@ -93,17 +87,11 @@ This starts:
 
 docker compose exec backend node iotClientSimulation.js
 
-powershell
-Copy code
-
 This sends sensor data every 2 seconds.
 
 ### Step 3: Open the dashboard
 
 http://localhost:3000
-
-markdown
-Copy code
 
 ## Dashboard Usage
 
@@ -142,14 +130,9 @@ When breached:
 docker compose up --build
 docker compose exec backend node iotClientSimulation.js
 
-r
-Copy code
-
 Open browser:
 http://localhost:3000
 
-shell
-Copy code
 
 ## Author
 
