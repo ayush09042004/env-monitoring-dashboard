@@ -32,27 +32,27 @@ This project is a full-stack environmental monitoring system that simulates IoT 
 - Docker Compose
 
 ## Project Structure
-
 Env-monitoring/
 ├── backend/
-│ ├── models/
-│ ├── routes/
-│ ├── alerts/
-│ ├── anomalyDetector.js
-│ ├── aiAnalyzer.js
-│ ├── iotClientSimulation.js
-│ ├── server.js
-│ ├── .env.example
-│ └── Dockerfile
+│   ├── models/
+│   ├── routes/
+│   ├── alerts/
+│   ├── anomalyDetector.js
+│   ├── aiAnalyzer.js
+│   ├── iotClientSimulation.js
+│   ├── server.js
+│   ├── .env.example
+│   └── Dockerfile
 │
 ├── frontend/
-│ ├── public/
-│ ├── src/
-│ ├── package.json
-│ └── Dockerfile
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── Dockerfile
 │
 ├── docker-compose.yml
 └── README.md
+
 
 markdown
 Copy code
