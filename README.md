@@ -46,12 +46,15 @@ Env-monitoring/
 
 Create a `.env` file inside the `backend` folder.
 
+```env
 MONGO_URI=mongodb://mongo:27017/env_monitor
 OPENAI_API_KEY=your_openai_api_key_here
 TWILIO_SID=your_twilio_sid
 TWILIO_AUTH=your_twilio_auth
 TWILIO_PHONE=+1234567890
 ALERT_PHONE=+911234567890
+```
+
 
 ### Notes
 
