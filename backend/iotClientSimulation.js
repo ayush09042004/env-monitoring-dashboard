@@ -14,7 +14,7 @@ socket.on("connect", () => {
             airQuality: 50 + Math.random() * 60
         };
 
+        console.log("Sending sensor data:", data);
         socket.emit("sensor-data", data);
-        // console.log("SENT SENSOR DATA", data);
     }, 2000);
 });
