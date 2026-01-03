@@ -1,59 +1,46 @@
 # Environmental Monitoring System (IoT + AI)
 
-This project is a full-stack environmental monitoring system that simulates IoT sensor data, streams it in real time, stores it in MongoDB, applies threshold-based alerts, and optionally uses AI to analyze anomalies. The complete system runs using Docker and Docker Compose.
+This project is a full-stack environmental monitoring system that simulates IoT sensor data, streams it in real-time, stores it in MongoDB, applies threshold-based alerts, and uses AI to analyze anomalies. The entire system is containerized using Docker.
 
-## Features
+## 🚀 Features
 
-- Real-time IoT sensor simulation
-- Live dashboard with charts and metrics
-- WebSocket streaming using Socket.IO
-- Threshold-based alerting system
-- Optional AI anomaly explanation using OpenAI
-- Optional SMS alerts using Twilio
-- MongoDB time-series data storage
-- Fully Dockerized frontend, backend, and database
+- **Real-time IoT Simulation:** Automated sensor data generation.
+- **Live Dashboard:** Interactive charts and metrics using React and Recharts.
+- **WebSocket Streaming:** Instant data updates via Socket.IO.
+- **Threshold Alerts:** Real-time monitoring with automated dashboard and SMS (Twilio) notifications.
+- **AI Insights:** Automated anomaly explanation using OpenAI GPT.
+- **Data Persistence:** MongoDB time-series storage for historical analysis.
+- **Containerized:** Seamless deployment via Docker and Docker Compose.
 
-## Tech Stack
+## 🛠 Tech Stack
 
-### Frontend
-- React
-- Socket.IO Client
-- Recharts
+- **Frontend:** React, Socket.IO Client, Recharts, Tailwind CSS
+- **Backend:** Node.js, Express, Socket.IO, Mongoose
+- **Database:** MongoDB
+- **Infrastructure:** Docker, Docker Compose
+- **Services:** OpenAI API, Twilio API
 
-### Backend
-- Node.js
-- Express
-- Socket.IO
-- MongoDB
-- Mongoose
+## 📂 Project Structure
 
-### Infrastructure
-- Docker
-- Docker Compose
-
-## Project Structure
-
+```text
 Env-monitoring/
 ├── backend/
-│ ├── models/
-│ ├── routes/
-│ ├── alerts/
-│ ├── anomalyDetector.js
-│ ├── aiAnalyzer.js
-│ ├── iotClientSimulation.js
-│ ├── server.js
-│ ├── .env.example
-│ └── Dockerfile
-│
+│   ├── models/             # Mongoose schemas
+│   ├── routes/             # API endpoints
+│   ├── alerts/             # Alert logic & Twilio integration
+│   ├── anomalyDetector.js  # Logic for detecting spikes/drops
+│   ├── aiAnalyzer.js       # OpenAI integration
+│   ├── iotClientSimulation.js
+│   ├── server.js           # Main entry point
+│   ├── .env.example
+│   └── Dockerfile
 ├── frontend/
-│ ├── public/
-│ ├── src/
-│ ├── package.json
-│ └── Dockerfile
-│
+│   ├── src/                # React components & hooks
+│   ├── public/
+│   └── Dockerfile
 ├── docker-compose.yml
 └── README.md
-
+```
 
 ## Environment Variables
 
